@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="" href="dist/css/main.css">
+    <link rel="stylesheet" type="" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="" href="http://www.swiper.com.cn/dist/css/swiper.min.css">
+</head>
+
+<body>
+    <div class="top">
+        <form>
+            <div class="form-group">
+                <div class="search-box">
+
+
+                    <input type="text" id="search" name="" placeholder="搜索在这里">
+                    <button type="submit" class="search-button"></button>
+                </div>
+
+
+
+                <select class="form-group down-menu">
+                    <option value="">菜单</option>
+                    <option value="">&nbsp;首页</option>
+                    <option value="">&nbsp;人生智慧</option>
+                    <option value="">&nbsp;关于每日一文</option>
+                    <option value="">&nbsp;文章存档</option>
+                    <option value="">&nbsp;标签云</option>
+                    <option value="">&nbsp;穿越时空</option>
+                    <option value="">&nbsp;网站地图</option>
+                    <option value="">&nbsp;百度地图</option>
+                    <option value="">&nbsp;简洁归档</option>
+                    <option value="">&nbsp;爱华夏 ©®</option>
+                    
+                </select>
+
+            </div>
+        </form>
+    </div>
+    <div class="main">
+
+
+        <div class="text-content">
+            <div class="theme-header">
+                <div class="header-content">
+                    <a href="" style="text-indent:2PX;color: #444;
+    text-decoration: none;font-size:40px;font-weight:bold;">每日一文</a>
+                    <span style="font-weight: normal;
+    font-size: 14px;">爱阅读，每日一文，每天一篇精彩文章！读最经典最优秀最有趣的文章，让读书变得更有乐趣！给你一个阅读的生活！做最优秀的博客网站。</span>
+                </div>
+
+                <nav class="main-nav">
+
+
+
+                    <select class="form-group main-menu">
+            <option value="" class="menu">菜单</option>
+            <option value=""> 首页</option>
+            <option value=""> 每日阅读</option>
+            <option value=""> 潜台词</option>
+            <option value="">&nbsp;&nbsp;-天才在左 疯子在右</option>
+            <option value=""> 每日一文</option>
+            <option value="">&nbsp;&nbsp;-读后感</option>
+            <option value=""> 经史子集</option>
+            <option value=""> 人生智慧</option>
+            <option value="">&nbsp;&nbsp;-人生感悟</option>
+            <option value="">&nbsp;&nbsp;-心灵鸡汤</option>
+            <option value="">&nbsp;&nbsp;-感悟生活</option>
+             <option value="">&nbsp;&nbsp;-经典语录</option>
+            <option value=""> 精选三文</option>
+             <option value=""> 视频影音</option>
+            
+                </select>
+                </nav>
+
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="http://w.ihx.cc/wp-content/uploads/5-2-620x330.jpg" alt=""><span class="text">Hello</span>
+
+
+                </div>
+                <div class="swiper-slide"><img src="http://w.ihx.cc/wp-content/uploads/5-620x330.jpg" alt=""> <span class="text">坚强</span>
+
+                </div>
+                <div class="swiper-slide"><img src="http://w.ihx.cc/wp-content/uploads/1357487684516546877651646_n-600x330.jpg" alt=""> <span class="text">爱情</span>
+
+                </div>
+                <div class="swiper-slide"><img src="http://w.ihx.cc/wp-content/uploads/tumblr_msueg2zH6y1st5lhmo-620x330.jpg" alt=""><span class="text">舒逸</span>
+
+                </div>
+                <div class="swiper-slide"><img src="http://w.ihx.cc/wp-content/uploads/smile-620x330.jpg" alt=""> <span class="text">微笑</span>
+
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination auto-play"></div>
+            <!-- Add Arrows -->
+            <!--<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>-->
+        </div>
+        <!--文本内容-->
+        <aside class="sidebar">
+
+
+            <div class="search">
+                <input type="text" class="search-text" name="" placeholder="输入关键词，然后回车">
+            </div>
+            <div class="widget-top">
+                <ul class="nav1">
+                    <li class=" title">最热文章</li>
+                    <li>最新文章</li>
+                    <li>最近评论</li>
+                </ul>
+            </div>
+            <div id="tab1" class="tabs-wrap">
+                <ul class="nav2">
+                    <li class="content">
+                        <h3>村上春树经典语录</h3>
+                        <span class="date">
+                            <span class="day">2014年3月13日</span>
+                        </span>
+
+                    </li>
+                    <li class="content" style="display:none;"></li>
+                    <li class="content" style="display:none;"></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="cat-box-content">
+        </div>
+    </div>
+
+
+</body>
+
+<script src="dist/js/underscore.js"></script>
+
+<script src="dist/js/jquery.js"></script>
+<script type="text/template" id="templete">
+
+    <div class="wide-news-item">
+
+        <div class="empty-space">
+            每日一文
+            <h2 class="post-box-title">
+                <%= title %>
+            </h2>
+            <p class="post-meta">
+                <span class="post-meta-author">
+                    <%= author %>
+                </span>
+                <span class="tie-date">
+                    <%= date.curr %>
+                </span>
+                <span class="post-cats">
+                    <%= date.prev %>
+                </span>
+                <span class="post-comments">
+                    <%= date.next %>
+                </span>
+                <span class="post-views">
+                    <%= wc %>
+                </span>
+            </p>
+            <div class="entry">
+                <p>
+                    <%= digest %>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</script>
+
+<script>
+    var muban = $("#templete").html(); //获取模板里面的内容
+    var tempStr = _.template(muban); //转为模板方法
+
+
+
+
+    $.ajax({
+        "url": "https://interface.meiriyiwen.com/article/today?dev=1",
+        "type": "get",
+        "data": {},
+        success: function(data) {
+            console.log(data);
+            $.each(data, function(index, value) {
+                var domObj = tempStr(value);
+                console.log(domObj);
+                $(".cat-box-content").append(domObj);
+
+            })
+
+        }
+    })
+</script>
+<script src="http://www.swiper.com.cn/dist/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="dist/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

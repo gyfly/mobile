@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+    border: 0 none;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 0 auto;
+    width: 160px;
+    border: 2px solid red;
+    height: 50px;
+    border-radius: 30%;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+
+/*.content {
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    position: relative;
+}*/
+
+.topic {
+    margin-top: 10px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+}
+
+.author {
+    margin-top: 10px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+}
+
+.article {
+    margin-top: 10px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+}

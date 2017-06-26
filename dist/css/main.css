@@ -1,0 +1,342 @@
+    * {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        list-style: none;
+        border: 0 none;
+        box-sizing: border-box;
+    }
+    
+    @media all and (min-width: 768px) {
+        body {
+            font-family: Tahoma, Arial, Verdana, sans-serif;
+            font-size: 13px;
+        }
+    }
+    /*body {
+        font-family: Tahoma, Arial, Verdana, sans-serif;
+        font-size: 13px;
+    }*/
+    
+    .top {
+        width: 100%;
+        background: #2c2c2c;
+        border-bottom: 4px solid #cd2122;
+        height: 97px;
+        z-index: 3;
+        position: relative;
+    }
+    
+    .main {
+        width: 280px;
+        margin: 0 auto;
+    }
+    
+    .form-group {
+        width: 280px;
+        height: 67px;
+        margin: 0 auto;
+    }
+    
+    .search-box {
+        width: 280px;
+        height: 30px;
+        margin: 0 auto;
+    }
+    
+    #search {
+        width: 250px;
+        height: 31px;
+        background: #373737;
+        color: #DDDDDD;
+    }
+    
+    .search-button {
+        width: 30px;
+        height: 30px;
+        float: right;
+        background: #373737;
+    }
+    
+    .search-box .search-button:before {
+        content: '🔍';
+        font-size: 23px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: #FFF;
+    }
+    
+    .top-menu {
+        width: 278px;
+        height: 25px;
+        margin: 0 auto;
+        margin-top: 15px;
+        background: #222222;
+        border: 1px solid #000000;
+    }
+    
+    .nav-tabs {
+        width: 100%;
+        height: 25px;
+        border-bottom: 0;
+        background: #222222;
+    }
+    
+    .dropdown {
+        width: 100%;
+        height: 25px;
+        background-color: #222222;
+        top: -20px;
+    }
+    
+    .open {
+        width: 100%;
+        height: 25px;
+        top: -20px;
+        color: #ccc;
+        font-size: 12px;
+    }
+    
+    .dropdown-toggle {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        color: #ccc;
+        top: -6px;
+        text-shadow: 0 1px 1px #000;
+        font-size: 12px;
+    }
+    
+    .caret {
+        float: right;
+    }
+    
+    .dropdown-menu {
+        width: 100%;
+        border: 1px solid aqua;
+        background: #222222;
+    }
+    
+    .content:hover {
+        background: darkcyan;
+    }
+    
+    .down-menu {
+        background: #222222;
+        color: #DDDDDD;
+        width: 280px;
+        height: 27px;
+        margin: 0 auto;
+        margin-top: 15px;
+        border: 1px solid #000000;
+    }
+    
+    .text-content {
+        width: 280px;
+        margin: 0 auto;
+    }
+    
+    .theme-header {
+        width: 100%;
+        height: 308px;
+    }
+    
+    .header-content {
+        height: 203px;
+        margin: 0 auto;
+        margin-top: 25px;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .main-nav {
+        height: 55px;
+        margin-top: 15px;
+        background: #2C2C2C;
+        border-bottom: 5px solid #cd2122;
+        position: relative;
+    }
+    
+    .main-menu {
+        width: 250px;
+        background: #222;
+        padding: 5px;
+        border: 1px solid #000;
+        color: #DDD;
+        height: 31px;
+        position: absolute;
+        top: 12px;
+        left: 14px;
+    }
+    /*swiper*/
+    
+    .swiper-container {
+        width: 280px;
+        height: 149px;
+        margin: 0 auto;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .swiper-wrapper img {
+        width: 280px;
+        height: 149px;
+        margin: 0 auto;
+    }
+    
+    .auto-play {
+        top: 3px;
+        margin-left: -85px;
+    }
+    
+    .text {
+        width: 56px;
+        height: 29px;
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        background: #cd2122;
+        font-size: 16px;
+        font-family: Oswald, arial, Georgia, serif;
+        color: #FFF;
+        font-weight: normal;
+        padding: 3px 10px;
+        word-spacing: 2px;
+    }
+    /*文本内容*/
+    
+    .sidebar {
+        width: 100%;
+        height: 352px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    .search {
+        width: 100%;
+        height: 37px;
+        margin: 0 auto;
+        box-shadow: 2px 2px 2px rgba(155, 155, 155, 0.4);
+    }
+    
+    .search-text {
+        width: 274px;
+        height: 37px;
+        text-align: center;
+        line-height: 37px;
+    }
+    
+    .widget-top {
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    
+    .widget-top ul {
+        width: 100%;
+    }
+    
+    .nav1 li {
+        width: 33.33%;
+        height: 38px;
+        float: left;
+        text-align: center;
+        line-height: 38px;
+        background: black;
+        color: white;
+        padding: 0;
+    }
+    
+    .title {
+        border-bottom: 1px solid red;
+    }
+    
+    #tab1 {
+        height: 245px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid red;
+    }
+    
+    .box {
+        width: 200px;
+        height: 49px;
+        position: relative;
+    }
+    /*模板*/
+    
+    .cat-box-content {
+        margin: 0 auto;
+        border: 1px solid red;
+        margin-top: 10px;
+    }
+    
+    .wide-news-item {
+        border-top: 6px solid red;
+        height: 215.5px;
+    }
+    
+    .empty-space {
+        width: 70px;
+        height: 30px;
+        background: red;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .post-box-title {
+        width: 100px;
+        font-weight: normal;
+        font-size: 16px;
+        height: 26px;
+        color: black;
+    }
+    
+    .post-meta {
+        width: 100px;
+        color: #aaa;
+        margin: 7px 0;
+        font-size: 10px;
+    }
+    
+    .post-meta span {
+        display: block;
+        float: left;
+    }
+    
+    .post-meta-author {
+        width: 90px;
+        float: left;
+        margin-top: -13px;
+    }
+    
+    .entry {
+        height: 82.5px;
+        line-height: 82.5px;
+    }
+    
+    .tie-date {
+        margin-left: 94px;
+        margin-top: -17px;
+        s
+    }

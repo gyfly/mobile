@@ -1,0 +1,183 @@
+.background-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper.full-site,
+.wrapper.layout-2c.full-site {
+    width: 100% !important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1219px) {
+    .wrapper {
+        width: 986px !important;
+    }
+    .wrapper {
+        position: relative;
+        z-index: 1;
+        width: 1220px;
+        margin: 0 auto;
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        background: #FFF;
+    }
+}
+
+.top {
+    width: 100%;
+    height: 97px;
+    background: #2c2c2c;
+    border-bottom: 4px solid #cd2122;
+    z-index: 3;
+    position: relative;
+}
+
+.container {
+    width: 280px;
+    height: 67px;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: 280px;
+    height: 30px;
+    float: right;
+    /*margin: 0 auto;*/
+    background: #373737;
+}
+
+.form-control {
+    width: 250px;
+    height: 31px;
+}
+
+
+/*#search {
+    width: 280px;
+}*/
+
+@media only screen and (max-width: 479px) {
+    .search-box {
+        margin-left: 0;
+    }
+}
+
+.search-box .search-button:before {
+    content: '🔍';
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    color: #FFF;
+}
+
+.search-box .search-button {
+    background: #3c3c3c;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    width: 30px;
+    display: block;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    opacity: 0.7;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    border-right: 1px solid #222;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 479px) {
+    .search-box #s,
+    .search-box #s:focus {
+        width: 225px;
+    }
+}
+
+.search-box #s {
+    background: #3c3c3c;
+    float: right;
+    font: normal 11px tahoma;
+    padding: 9px 12px 8px 12px;
+    border: 0 none;
+    border-left: 1px solid #222;
+    transition: all ease-in-out 0.4s;
+    opacity: 0.7;
+    outline: none;
+    color: white;
+}
+
+.search-box:hover #s {
+    opacity: 1;
+    color: #ddd;
+}
+
+@media only screen and (max-width: 479px) {
+    .top-nav .social-icons {
+        padding: 5px 0;
+        clear: both;
+        float: none;
+    }
+}
+
+.top .social-icons {
+    float: right;
+    margin: 3px 5px 0 0;
+}
+
+.social-icons {
+    width: 275px;
+    height: 10px;
+    text-align: center;
+}
+
+#top-menu-mob {
+    background: #222;
+    border: 1px solid #000;
+    color: #DDD;
+    height: 27px;
+}
+
+.top-nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.top-menu {
+    width: 280px;
+    height: 27px;
+    position: absolute;
+    top: 50px;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#menu-top {
+    display: none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="" href="dist/css/xq.css">
+</head>
+
+<body>
+    <div class="title">
+        今天你读书了吗
+    </div>
+    <div class="content">
+
+    </div>
+</body>
+<script src="dist/js/underscore.js"></script>
+
+<script src="dist/js/jquery.js"></script>
+<script type="text/template" id="templete">
+    <div class="box">
+
+        <h3 class="topic">
+            Title:&nbsp;&nbsp;
+            <%= title %>
+
+        </h3>
+        <h3 class="author">
+            Author:&nbsp;&nbsp;
+            <%= author %>
+        </h3>
+        <h3 class="article">
+            Article:&nbsp;&nbsp;
+            <%= content %>
+        </h3>
+        <span class="date">
+            <h3 class="prev"></h3>
+        </span>
+
+    </div>
+</script>
+
+<script>
+    var muban = $("#templete").html(); //获取模板里面的内容
+    // console.log(muban);
+
+    var tempStr = _.template(muban); //转为模板方法
+
+
+
+
+    $.ajax({
+        "url": "https://interface.meiriyiwen.com/article/today?dev=1",
+        "type": "get",
+        "data": {},
+        success: function(res) {
+            console.log(res);
+            $.each(res, function(index, value) {
+                var domObj = tempStr(value);
+                // console.log(domObj);//插入模板
+                $(".content").append(domObj);
+
+            })
+
+        }
+    })
+</script>
+
+</html>

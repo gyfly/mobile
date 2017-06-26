@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+
+    </div>
+    <div class="box">
+        <div class="left">
+
+        </div>
+        <div class="right">
+
+        </div>
+
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+<script src="dist/js/jquery.js"></script>
+<script>
+    $.ajax({
+        type: "get",
+        url: "http://v3.wufazhuce.com:8000/api/onelist/3520/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android",
+        dataType: "jsonp",
+        success: function(res) {
+            JSON.parse(res);
+            console.log(res);
+        }
+    })
+</script>
+
+</html>
